@@ -289,15 +289,7 @@ transform: rotate(90deg);
 
 }
 
-.holder{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    background-color: #37353E;
-    top: 20px;
-    left: 85px;
-    
-}
+
 
 .mouse-pad{
     position: relative;
@@ -321,15 +313,24 @@ transform: rotate(90deg);
 
 }
 
+.holder{
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    background-color: #37353E;
+    top: 170px;
+}
+
 .surface{
     position: relative;
-    width: 160px;
-    height: 13px;
+    width: 130px;
+    height: 12px;
     background-color: #37353E;
     border-top: none;
-    top: 20px;
+    top: 18px;
+    right: 50px ;
     border-radius: 4px;
-    right: 65px;
+   
     
 }
 
