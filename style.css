@@ -1,0 +1,466 @@
+
+/*section 1 - logo */
+.container {
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
+  gap: 40px;          
+  border: 1px solid transparent;
+  margin-top: 20px;
+}
+
+
+.desktop-container{
+    position: relative;
+    min-width: 600px;
+    max-width: 100%;
+    min-height: 300px;
+    max-height: 100%;
+     margin-left: 200px;
+    border: 1px solid transparent;
+}
+
+.desktop{
+    position: absolute;
+    width: 600px;
+    height: 20px;
+    background: linear-gradient(to right , #914F1E) ;
+    top: 120px;
+    box-shadow: inset -10px 0px 10px #64270a;  
+}
+
+.heart{
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  transform: rotate(45deg);
+  top: 65px;
+  left: 70px;
+
+  animation: pulse 1s infinite; 
+
+}
+
+.heart::before,.heart::after{
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50px;
+  
+  
+}
+
+.heart::before{
+  bottom: 5px;
+}
+.heart::after{
+  left: -5px;
+
+}
+
+.heart:nth-child(2){
+    top: 20px;
+    left: 100px;
+}
+
+.heart:nth-child(3){
+    top: 40px;
+    left: 150px;
+}
+.heart:nth-child(4){
+    top: 60px;
+    left: 120px;
+}
+
+
+@keyframes pulse {
+  
+  0% {transform: rotate(45deg) scale(1);}
+  50% {transform: rotate(45deg) scale(1.2);}
+
+}
+
+
+
+.cactus-container {
+ position: relative;
+    width: 100px;
+   height: 100px; 
+   border-radius: 8px; 
+   left: 450px; 
+   bottom: 100px ;
+    animation: move 1.5s ;
+    
+   
+}
+
+.cactus{
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  left: 6px;                  
+  bottom: 10px;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 5px 3px #0A400C;
+  border-right: 5px solid green;
+  border-left: 5px solid green;
+  background-color: #409443;
+   border-radius: 50px 50px 0 0;
+  
+}
+
+.cactus-arm {
+  position: absolute;
+  width: 3px;
+  height: 30px;
+  left: 20px;
+  bottom: 10px;
+  border-radius: 50%;
+  background-color: #5B913B;  
+  transform: rotate(50deg);
+  border-right: 3px solid rgb(91, 189, 91);
+  border-left: 3px solid rgb(62, 139, 62);
+  box-shadow: inset 10px 0px 10px 0px #0A400C;
+  z-index: -1;
+}
+
+.cactus-arm::before {
+  content: "";  
+  position: absolute;
+  width: 3px;
+  height: 30px;
+  right: 10px; 
+  bottom: -30px; 
+  border-radius: 50%;
+  background-color: #5B913B;  
+  transform: rotate(-100deg); 
+  border-right: 3px solid rgb(91, 189, 91);
+  border-left: 3px solid rgb(62, 139, 62);
+  box-shadow: inset 10px 0px 10px 0px #0A400C;
+}
+
+
+.pot{
+position: relative;
+  width: 35px;
+  height: 31px;
+  top: 70px;
+  left: 35px;
+  background-color: #7a5341;
+  border-radius: 1px;
+  box-shadow: inset -20px 0px 10px 1px #aa6239;
+  transform: rotate(180deg);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+
+}
+
+.pot-top{
+  position: absolute;  
+  width: 45px;
+  height: 10px;         
+  left: 30px;  
+  top: 60px;                
+  background-color: #7a5341;
+  border-radius: 3px;
+  box-shadow: inset 20px 0px 8px 1px #aa6239;  
+
+
+}
+
+  @keyframes move {
+
+    from{
+
+    left: 450px; bottom: 100px
+    }
+
+    to{
+      left: 500px; bottom: 100px ;
+    }
+}
+
+
+.drawer-container {
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.drawer {
+position: relative;
+left: 20px;
+  width: 80%;            
+  height: 50px;
+  background: #FEF9D9;
+  display: flex;           
+  justify-content: center; 
+  align-items: center;  
+  box-shadow: inset 0px 0px 9px 6px #DCCFC0;   
+}
+
+.handle {
+  width: 40px;
+  height: 10px;
+  background-color: #D3DAD9;
+  border-radius: 5%;
+box-shadow: inset -10px 0px 20px #636967;  
+}
+
+.drawer-background {
+  position: absolute;
+  top: 100px;
+  right: 60px;
+  width: 210px;
+  height: 160px;     
+  background-color: #914F1E;
+  box-shadow: inset -10px 0px 10px #64270a;            
+}
+
+
+.door-container{
+position: absolute;
+width: 160px;
+height: 180px;
+background-color:#914F1E;
+box-shadow: inset -10px 0px 10px #64270a;   
+right: 0px;
+top: 0px;
+  
+
+
+}
+
+.door{
+position: absolute;
+width: 130px;
+height: 150px;
+background-color:#FEF9D9;
+box-shadow: inset 10px 0px 30px 15px #DCCFC0;  
+left: 15px;
+top: 20px;
+ 
+}
+
+.door-handle{
+position: relative;
+top:50px;
+width: 40px;
+height: 10px;
+background-color: #D3DAD9;
+border-radius: 5%;
+box-shadow: inset -10px 0px 20px #636967;  
+transform: rotate(90deg);
+ 
+}
+
+
+
+.computer-container{
+    position: relative;
+    left: 180px;
+    width: 250px;
+    height: 280px;
+    transform: scale(0.6);
+    bottom: 310px;
+}
+
+
+
+.screen{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background-color: #44444E;
+    top: 50px;
+    box-shadow: inset 10px 10px 10px #37353E;
+    place-items: center;
+
+}
+
+.holder{
+    position: relative;
+    width: 30px;
+    height: 170px;
+    background-color: #37353E;
+    top: 90px;
+    left: 85px;
+    
+}
+
+.mouse-pad{
+    position: relative;
+    width: 50px;
+    height: 10px;
+    background-color: black;
+    left: 380px;
+    bottom: 390px;
+    border-radius: 3px;
+}
+.mouse{
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #9AA6B2;
+    border-bottom: none;
+    left: 15px;
+    bottom: 10px;
+    box-shadow: inset 10px 10px 10px #7A7A73;
+
+}
+
+.surface{
+    position: relative;
+    width: 160px;
+    height: 13px;
+    background-color: #37353E;
+    border-top: none;
+    top: 160px;
+    border-radius: 4px;
+    right: 65px;
+    
+}
+
+.window{
+    position: absolute;
+    width: 160px;
+    height: 120px;
+    background-color:white;
+    top: 10px;
+    place-items: center;
+    border: 4px solid black;
+    box-shadow: inset 0px 0px 10px 10px #DCDCDC;
+    
+    
+}
+
+.lower-screen{
+    position: absolute;
+    width: 200px;
+    height: 23px;
+    background-color: gray;
+    bottom: -20px;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    
+}
+
+
+.buttons{
+    position: absolute;   
+    left: 100px;
+    top: 5px;
+    place-items: right;
+    
+}
+
+.dot1{
+    position: absolute;   
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    left: 40px;
+    
+}
+
+.dot2{
+    position: absolute;   
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    left: 60px;
+}
+
+.window > p{
+    
+  font-family: "Press Start 2P", serif;
+  margin-top: 10px;
+  font-size: 40px;
+  text-align: center;
+   
+}
+
+.content-window-container{
+  display: flex;
+  position: relative;
+  width: 1000px ;
+  height: 500px ;
+  border-radius: 30px;
+  background-color: #FFFCFB;
+  margin: auto;
+  top:100px;
+  transform: scale(1.2);
+  animation: intro 1.5s ;
+}
+
+@keyframes intro {
+  from{
+    right: 1000px;
+  }
+  to{
+    right: 0px;
+  }
+  
+}
+
+.menu-bar{
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #DCDCDC;
+}
+
+.manger-dot{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  left: 50px;
+  background-color: rgb(240, 178, 64);
+  border-radius: 50%;
+  box-shadow: 30px 0px 0 0 #E43636 , 60px 0px 0 0 #0fbc18;
+}
+
+.arrow{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  border-radius: 50%;
+  left: 200px;
+  background-color: #FFFCFB;
+  box-shadow: 40px 0px 0 0 #FFFCFB;
+
+}
+
+.search-bar{
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  border-radius: 30px;
+  background-color: #FFFCFB;
+  top: 20%;
+  left: 35%;
+}
+
+
+p{
+  font-family: 'Libertinus Keyboard', sans-serif;
+  font-size: 60px;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
