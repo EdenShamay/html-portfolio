@@ -21,16 +21,17 @@
     min-height: 300px;
     max-height: 100%;
      margin-left: 200px;
-    border: 1px solid transparent;
+
 }
 
 .desktop{
     position: absolute;
     width: 600px;
     height: 20px;
-    background: linear-gradient(to right , #914F1E) ;
     top: 120px;
-   
+    background-color: #914F1E;
+  box-shadow: inset -10px 0px 10px #64270a;   
+  
 }
 
 .heart{
@@ -282,7 +283,7 @@ transform: rotate(90deg);
     width: 200px;
     height: 150px;
     background-color: #44444E;
-    top: 50px;
+    top: 60px;
     box-shadow: inset 10px 10px 10px #37353E;
     place-items: center;
 
@@ -291,9 +292,9 @@ transform: rotate(90deg);
 .holder{
     position: relative;
     width: 30px;
-    height: 170px;
+    height: 30px;
     background-color: #37353E;
-    top: 90px;
+    top: 20px;
     left: 85px;
     
 }
@@ -326,7 +327,7 @@ transform: rotate(90deg);
     height: 13px;
     background-color: #37353E;
     border-top: none;
-    top: 160px;
+    top: 20px;
     border-radius: 4px;
     right: 65px;
     
