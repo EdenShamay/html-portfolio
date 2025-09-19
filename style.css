@@ -1,0 +1,70 @@
+
+
+body{
+    background-color: #f0b240;
+}
+
+header{
+    background-color: #e43636;
+    border-radius: 10px;
+}
+.window{
+  display:flex;
+  flex-direction:column;      
+  width:50%; 
+  height:50px;
+  background:#fff;
+border-radius: 15px;
+  
+ 
+}
+.menu-bar{
+    position: relative;
+  display:flex;
+  align-items:center;
+  width: 100%;
+  height:30%;
+  background: #DCDCDC;
+  border-top-left-radius:30px;
+  border-top-right-radius:30px;
+  justify-content: space-around;
+}
+
+.buttons{
+  width:0.5em; 
+  height:0.5em;
+  border-radius:50%;
+  
+}
+
+.red{ background:#e43636; }
+.yellow{ background:#f0b240; }
+.green{ background:#0fbc18; }
+
+.search-bar{
+  width: 50%;
+  height: 40%;
+  background:#fff;
+  border-radius:30px;
+}
+
+
+footer{
+    background-color: #0fbc18;
+}
+
+
+
+  <div class="container-window">  <!--grid children-->
+    <div class="window">  <!--flex-->
+     <div class="menu-bar">
+  <div class="buttons red"></div>
+  <div class="buttons yellow"></div>
+  <div class="buttons green"></div>
+  <div class="search-bar"></div>
+</div>
+
+      
+
+</div>
+      </div>
